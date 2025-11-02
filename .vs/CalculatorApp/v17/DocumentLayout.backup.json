@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{5E70FBE0-9DA0-4A5E-B1F5-702D434A26AC}|CalculatorApp\\CalculatorApp.csproj|solutionrelative:calculatorapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6BF09141-2A09-4543-94A4-70E557553A44}|CalculatorLib\\CalculatorLib.csproj|c:\\users\\artur\\source\\repos\\calculatorapp\\calculatorlib\\scientificcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF09141-2A09-4543-94A4-70E557553A44}|CalculatorLib\\CalculatorLib.csproj|solutionrelative:calculatorlib\\scientificcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6BF09141-2A09-4543-94A4-70E557553A44}|CalculatorLib\\CalculatorLib.csproj|c:\\users\\artur\\source\\repos\\calculatorapp\\calculatorlib\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BF09141-2A09-4543-94A4-70E557553A44}|CalculatorLib\\CalculatorLib.csproj|solutionrelative:calculatorlib\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,14 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Calculator.cs",
-              "DocumentMoniker": "C:\\Users\\artur\\source\\repos\\CalculatorApp\\CalculatorLib\\Calculator.cs",
-              "RelativeDocumentMoniker": "CalculatorLib\\Calculator.cs",
-              "ToolTip": "C:\\Users\\artur\\source\\repos\\CalculatorApp\\CalculatorLib\\Calculator.cs",
-              "RelativeToolTip": "CalculatorLib\\Calculator.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwDAAAAAAAAAAAAAAAA==",
+              "Title": "ScientificCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\artur\\source\\repos\\CalculatorApp\\CalculatorLib\\ScientificCalculator.cs",
+              "RelativeDocumentMoniker": "CalculatorLib\\ScientificCalculator.cs",
+              "ToolTip": "C:\\Users\\artur\\source\\repos\\CalculatorApp\\CalculatorLib\\ScientificCalculator.cs",
+              "RelativeToolTip": "CalculatorLib\\ScientificCalculator.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwBwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T19:46:48.685Z",
+              "WhenOpened": "2025-11-02T18:59:16.945Z",
               "EditorCaption": ""
             },
             {
@@ -41,9 +45,22 @@
               "RelativeDocumentMoniker": "CalculatorApp\\Program.cs",
               "ToolTip": "C:\\Users\\artur\\source\\repos\\CalculatorApp\\CalculatorApp\\Program.cs",
               "RelativeToolTip": "CalculatorApp\\Program.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAkwEwAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAQwEEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T18:56:12.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "C:\\Users\\artur\\source\\repos\\CalculatorApp\\CalculatorLib\\Calculator.cs",
+              "RelativeDocumentMoniker": "CalculatorLib\\Calculator.cs",
+              "ToolTip": "C:\\Users\\artur\\source\\repos\\CalculatorApp\\CalculatorLib\\Calculator.cs",
+              "RelativeToolTip": "CalculatorLib\\Calculator.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAA5wCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T18:53:01.145Z",
               "EditorCaption": ""
             }
           ]
