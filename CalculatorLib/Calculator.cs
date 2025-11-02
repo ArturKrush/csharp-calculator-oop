@@ -6,7 +6,7 @@
         public double LastResult
         {
             get { return lastResult; }
-            private set { lastResult = value; }
+            protected set { lastResult = value; }
         }
 
         public double Add(double a, double b)
@@ -37,7 +37,7 @@
             return LastResult;
         }
 
-        private void CheckResult()
+        public void CheckResult()
         {
             if (double.IsInfinity(LastResult))
                 Console.WriteLine("Result is infinity — overflow occurred.");
