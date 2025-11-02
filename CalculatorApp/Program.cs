@@ -8,58 +8,73 @@ namespace CalculatorApp
     {
         private static void Main(string[] args)
         {
-            bool result;
             //Console.OutputEncoding = Encoding.UTF8;
+            bool result;
+
+            int CalcCode;
+            int OpCode;
+            double Op1;
+            double Op2;
+
             while (true)
             {
                 Console.WriteLine("Which calculator do you want to choose?");
                 Console.WriteLine("1 - Standart, 2 - Programmer calculator, " +
                     "3 - Scientific calculator");
-                result = int.TryParse(Console.ReadLine(), out int CalcCode);
-                if (!result || CalcCode < 1 || CalcCode > 3)
+                do
                 {
-                    Console.WriteLine("Code must be integer from 1 to 3. " +
-                        "Try again.");
-                    continue;
+                    result = int.TryParse(Console.ReadLine(), out CalcCode);
+                    if (!result)
+                        Console.WriteLine("Code must be integer from 1 to 3. " +
+                            "Try again.");
                 }
+                while (!result || CalcCode < 1 || CalcCode > 3);
 
                 Console.WriteLine("Which operation to execute?");
                 SuggestOperation(CalcCode);
 
-                result = int.TryParse(Console.ReadLine(), out int OpCode);
-                if (!result || OpCode < 1 || OpCode > 8)
+                do
                 {
-                    Console.WriteLine("Code must be integer from 1 to 8. " +
+                    result = int.TryParse(Console.ReadLine(), out OpCode);
+                    if (!result)
+                        Console.WriteLine("Code must be integer from 1 to 8. " +
                         "Try again.");
-                    continue;
                 }
+                while (!result || CalcCode < 1 || CalcCode > 8);
 
                 if (CalcCode == 1 && OpCode > 4)
                 {
-                    Console.WriteLine("There are no 5-8 operations for " +
-                        "Standart Calculator. Try again.");
-                    continue;
+                    do
+                    {
+                        Console.WriteLine("There are no 5-8 operations for " +
+                                                "Standart Calculator. Try again and check " +
+                                                "that input is an integer.");
+                        result = int.TryParse(Console.ReadLine(), out OpCode);
+                    }
+                    while (!result || OpCode < 1 || OpCode > 4);
                 }
 
                 Console.WriteLine("Enter first floating point or integer operator:");
-                result = double.TryParse(Console.ReadLine(), out double Op1);
-                if (!result)
+                do
                 {
-                    Console.WriteLine("Input error. Only numbers in n or n.###... format. " +
+                    result = double.TryParse(Console.ReadLine(), out Op1);
+                    if (!result)
+                        Console.WriteLine("Input error. Only numbers in n or n,###... format. " +
                     "Try again");
-                    continue;
                 }
+                while (!result);
 
                 Console.WriteLine("Enter second floating point or integer operator:");
-                result = double.TryParse(Console.ReadLine(), out double Op2);
-                if (!result)
+                do
                 {
-                    Console.WriteLine("Input error. Only numbers in n or n.###... format. " +
+                    result = double.TryParse(Console.ReadLine(), out Op2);
+                    if (!result)
+                        Console.WriteLine("Input error. Only numbers in n or n,###... format. " +
                     "Try again");
-                    continue;
+                    if(result && Op2 == 0)
+                        throw new DivideByZeroException("You can not divide by zero.");
                 }
-                if (OpCode == 4 && Op2 == 0)
-                    throw new DivideByZeroException("You can not divide by zero.");
+                while (!result);
 
                 ExecuteOp(CalcCode, OpCode, Op1, Op2);
             }
@@ -94,10 +109,10 @@ namespace CalculatorApp
                 switch (OpCode)
                 {
                     case 1:
-                        Console.WriteLine("Addition is: " + calculator.Add(Op1, Op2)); 
+                        Console.WriteLine("Addition is: " + calculator.Add(Op1, Op2));
                         break;
                     case 2:
-                        Console.WriteLine("Difference is: " + calculator.Subtract(Op1, Op2)); 
+                        Console.WriteLine("Difference is: " + calculator.Subtract(Op1, Op2));
                         break;
                     case 3:
                         Console.WriteLine("Product is: " + calculator.Multiply(Op1, Op2));
@@ -115,6 +130,6 @@ namespace CalculatorApp
             {
                 //ScientificСalculator scienCalculator = new ScientificСalculator();
             }
-        } 
+        }
     }
 }

@@ -37,7 +37,6 @@
             return LastResult;
         }
 
-
         private void CheckResult()
         {
             if (double.IsInfinity(LastResult))
