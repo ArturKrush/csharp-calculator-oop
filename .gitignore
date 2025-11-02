@@ -130,7 +130,6 @@ $tf/
 # ReSharper is a .NET coding add-in
 _ReSharper*/
 *.[Rr]e[Ss]harper
-*.DotSettings.user
 
 # TeamCity is a build add-in
 _TeamCity*
@@ -175,9 +174,6 @@ DocProject/Help/*.hhk
 DocProject/Help/*.hhp
 DocProject/Help/Html2
 DocProject/Help/html
-
-# Click-Once directory
-publish/
 
 # Publish Web Output
 *.[Pp]ublish.xml
@@ -361,3 +357,42 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Local environment & configuration files
+*.env
+*.env.local
+appsettings.Development.json
+appsettings.Local.json
+
+# User-specific .NET Core configuration
+.vscode/
+.vsconfig
+*.DotSettings
+
+# Temporary publish and runtime folders
+publish/
+TestResults/
+
+# Entity Framework Migrations snapshots (якщо генеруються тимчасово)
+[Mm]igrations/
+
+# JetBrains Rider / ReSharper caches
+.idea/
+.ReSharper*/
+*.DotSettings.user
+
+# Visual Studio Code workspace files
+*.code-workspace
+
+# Coverage tools (якщо тестуєш)
+lcov.info
+
+# Rider, OmniSharp and other IDEs
+.sln.iml
+.sln.DotSettings.user
+
+# SQLite or other local DBs used in development
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
